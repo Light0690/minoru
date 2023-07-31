@@ -1,0 +1,21 @@
+{
+  "name": "minoru",
+  "version": "0.0.18",
+  "description": "",
+  "type": "module",
+  "main": "lib/minoru.js",
+  "types": "lib/minoru.d.ts",
+  "files": [
+    "lib/*"
+  ],
+  "scripts": {
+    "test": "node test",
+    "bundle": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "typescript": "^5.1.6"
+  }
+}
