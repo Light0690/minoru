@@ -1,6 +1,6 @@
 {
   "name": "minoru",
-  "version": "0.0.19",
+  "version": "0.1.19",
   "description": "",
   "type": "module",
   "main": "lib/minoru.js",
