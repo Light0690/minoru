@@ -1,4 +1,4 @@
-export const isUniqueValue = (arr: any[]) => {
+export const getUniqueValue = (arr: any[]) => {
   if (!Array.isArray(arr)) {
     throw new Error("invalid params");
   }
