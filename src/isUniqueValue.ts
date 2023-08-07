@@ -1,5 +1,5 @@
 export const isUniqueValue = (arr: any[]) => {
-  if (!Array.isArray(arr) || arr === null || arr === undefined) {
+  if (!Array.isArray(arr)) {
     throw new Error("invalid params");
   }
 
