@@ -11,7 +11,7 @@ export const intersection = (arr1: any[], arr2: any[]) => {
   }
 
   const maxLength = arr1.length >= arr2.length ? arr1.length : arr2.length;
-  const res = [];
+  const res = []; 
 
   for (let i = 0; i < maxLength; i++) {
     if (arr1.includes(arr2[i])) {
