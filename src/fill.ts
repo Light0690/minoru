@@ -1,11 +1,12 @@
 /**
+ * Функция замеяет все элемента массива на новые, переданные в параметр - element
  *
- * @param arr - любой массив
- * @param element - любой элемент
- * @returns - arr -  новый массив с заменой всех элементов на - element
+ * @param { any[] } arr  любой массив
+ * @param { any[] } element  любой элемент
+ * @returns { any[] } новый массив с заменой всех элементов на - element
  */
 
-export const fill = (arr: any[], element: any) => {
+export const fill = (arr: any[], element: any): any[] => {
   if (!Array.isArray(arr)) {
     throw new Error("invalid params");
   }
