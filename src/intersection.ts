@@ -1,3 +1,10 @@
+/**
+ *
+ * @param arr1 - любой массив
+ * @param arr2 - любой массив
+ * @returns - arr - новый массив из пересекающихся элементов обоих массивов
+ */
+
 export const intersection = (arr1: any[], arr2: any[]) => {
   if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
     throw new Error("invalid params");
