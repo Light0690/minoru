@@ -1,8 +1,9 @@
-import { isEmptyObj } from "../lib/minoru.js";
+import assert from "assert";
 
-export const checkIsEmptyObj = (() => {
-  const res = isEmptyObj({ a: 1, b: 2 });
+import { isEmptyObj } from "../lib/isEmptyObj.js";
 
-  if (res) throw new Error("isEmptyObj don`t work");
-  console.log("isEmptyObj ✅");
-})();
+describe("isEmptyObj", () => {
+  it("проверяет обьект, на наличие значений", () => {
+    assert.equal(isEmptyObj({}), true);
+  });
+});
