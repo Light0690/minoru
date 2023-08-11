@@ -6,4 +6,4 @@ describe("isEmptyObj", () => {
   it("проверяет обьект, на наличие значений", () => {
     assert.equal(isEmptyObj({}), true);
   });
-});
+}); 
