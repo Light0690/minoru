@@ -1,7 +1,9 @@
-import { getUniqueValue } from "../lib/minoru.js";
+import assert from "assert";
 
-export const checkGetUniqueValue = (() => {
-  const res = getUniqueValue([1, 2, 3, 1]);
-  if (res.length === 4) throw new Error("Unique is not working");
-  console.log("isUniqueValue ✅");
-})();
+import { getUniqueValue } from "../lib/getUniqueValue.js";
+
+describe("getUniqueValue", () => {
+  it("приводит массив к уникальным значениям", () => {
+    assert.equal(getUniqueValue([1, 2, 3, 1, 2, 3]).length, 3);
+  });
+});

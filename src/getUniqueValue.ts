@@ -3,7 +3,5 @@ export const getUniqueValue = (arr: any[]) => {
     throw new Error("invalid params");
   }
 
-  const res = arr.filter((el) => arr.indexOf(el) === arr.lastIndexOf(el));
-
-  return res;
+  return [...new Set(arr)];
 };

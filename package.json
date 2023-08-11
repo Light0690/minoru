@@ -1,21 +1,22 @@
 {
   "name": "minoru",
-  "version": "0.1.19",
+  "version": "0.1.21",
   "description": "",
   "type": "module",
-  "main": "lib/minoru.js",
-  "types": "lib/minoru.d.ts",
+  "main": "lib/*",
+  "types": "lib/*",
   "files": [
     "lib/*"
   ],
   "scripts": {
-    "test": "node test",
+    "test": "mocha",
     "bundle": "tsc"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.4.5",
+    "mocha": "^10.2.0",
     "typescript": "^5.1.6"
   }
 }
