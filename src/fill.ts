@@ -11,5 +11,5 @@ export const fill = (arr: any[], element: any) => {
   }
 
   const res = arr.map((el) => (el = element));
-  return res; 
+  return res;
 };
