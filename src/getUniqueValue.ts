@@ -12,3 +12,4 @@ export const getUniqueValue = (arr: any[]): any[] => {
 
   return [...new Set(arr)];
 };
+ 
