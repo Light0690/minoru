@@ -2,7 +2,7 @@
  * Функция принимает обьект и возвращает ответ, пустой он или нет
  * 
  * @param { obj } obj любой обьект 
- * @returns { boolean} ответ, пустой ли обьект
+ * @returns { boolean } ответ, пустой ли обьект
  */
 
 export const isEmptyObj = (obj: Object): boolean => {
