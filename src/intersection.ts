@@ -1,11 +1,12 @@
 /**
- *
- * @param arr1 - любой массив
- * @param arr2 - любой массив
- * @returns - arr - новый массив из пересекающихся элементов обоих массивов
+ * Функция совмещает два массива в один, оставляя значения, которые есть в обоих массивах 
+ * 
+ * @param { any[] } arr1 любой массив
+ * @param { any[] } arr2 любой массив
+ * @returns { any[] } новый массив из пересекающихся элементов обоих массивов
  */
 
-export const intersection = (arr1: any[], arr2: any[]) => {
+export const intersection = (arr1: any[], arr2: any[]): any[] => {
   if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
     throw new Error("invalid params");
   }

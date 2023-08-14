@@ -1,13 +1,15 @@
 /**
+ * Функция оставляет в массиве только уникальные значения
  * 
- * @param arr - любой массив
- * @returns - arr - новый массив, состоящий из уникальных значений
+ * @param { any[] } arr любой массив
+ * @returns { any[] } новый массив, состоящий из уникальных значений
  */
 
-export const getUniqueValue = (arr: any[]) => {
+export const getUniqueValue = (arr: any[]): any[] => {
   if (!Array.isArray(arr)) {
     throw new Error("invalid params");
   }
 
   return [...new Set(arr)];
 };
+ 

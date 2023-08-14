@@ -1,6 +1,6 @@
 {
   "name": "minoru",
-  "version": "0.1.25",
+  "version": "0.1.27",
   "description": "",
   "type": "module",
   "main": "lib/minoru.js",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/node": "^20.4.5",
     "mocha": "^10.2.0",
+    "typedoc": "^0.24.8",
     "typescript": "^5.1.6"
   }
 }

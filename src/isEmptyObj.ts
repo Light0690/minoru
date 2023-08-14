@@ -1,10 +1,11 @@
 /**
+ * Функция принимает обьект и возвращает ответ, пустой он или нет
  * 
- * @param obj - любой обьект 
- * @returns - boolean - ответ, пустой ли обьект
+ * @param { obj } obj любой обьект 
+ * @returns { boolean } ответ, пустой ли обьект
  */
 
-export const isEmptyObj = (obj: Object) => {
+export const isEmptyObj = (obj: Object): boolean => {
   if (typeof obj !== "object" || obj === null || obj === undefined) {
     throw new Error("invalid params");
   }
