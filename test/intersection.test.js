@@ -16,8 +16,8 @@ describe("intersection", () => {
           400000000000000000000n,
           500000000000000000000n,
         ],
-        [100000000000000000000n, 300000000000000000000n]
-      )
+        [100000000000000000000n, 300000000000000000000n],
+      ),
     ).toStrictEqual([100000000000000000000n, 300000000000000000000n]);
     expect(intersection([true], [false, true])).toStrictEqual([true]);
     // - expect(intersection([[],1,'a'], [[]])).toStrictEqual([[]]);
@@ -32,13 +32,13 @@ describe("intersection", () => {
       intersection();
     }).toThrow();
     expect(() => {
-      intersection([],{});
+      intersection([], {});
     }).toThrow();
     expect(() => {
-      intersection([],'a');
+      intersection([], "a");
     }).toThrow();
     expect(() => {
-      intersection([],1);
+      intersection([], 1);
     }).toThrow();
   });
 });

@@ -4,7 +4,7 @@ describe("isEmptyObj", () => {
   test("проверяет обьект, на наличие значений", () => {
     expect(isEmptyObj({})).toStrictEqual(true);
     expect(isEmptyObj([])).toStrictEqual(true);
-    expect(isEmptyObj({1:'a'})).toStrictEqual(false);
+    expect(isEmptyObj({ 1: "a" })).toStrictEqual(false);
 
     //throw error - param !== object
     expect(() => {
@@ -13,6 +13,5 @@ describe("isEmptyObj", () => {
     expect(() => {
       isEmptyObj(undefined);
     }).toThrow();
-
   });
 });

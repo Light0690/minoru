@@ -16,14 +16,14 @@ describe("getUniqueValue", () => {
         100000000000000000000n,
         200000000000000000000n,
         300000000000000000000n,
-      ])
+      ]),
     ).toStrictEqual([
       100000000000000000000n,
       200000000000000000000n,
       300000000000000000000n,
     ]);
     expect(
-      getUniqueValue([false, false, false, true, true, true])
+      getUniqueValue([false, false, false, true, true, true]),
     ).toStrictEqual([false, true]);
     // - expect(getUniqueValue([{}, {}, {}])).toStrictEqual([{}]);
     // - expect(getUniqueValue([[], [], []])).toStrictEqual([[]]);
