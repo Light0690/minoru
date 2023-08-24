@@ -9,18 +9,11 @@ describe("getUniqueValue", () => {
     expect(getUniqueValue([])).toStrictEqual([]);
   });
 
-  //throw error - param !== array
-  // test("отсутствие параметров", () => {
-  //   expect(() => {
-  //     getUniqueValue();
-  //   }).toThrow();
-  // });
-
-  // test("некорректные параметры", () => {
-  //   expect(() => {
-  //     getUniqueValue({}, 1);
-  //   }).toThrow();
-  // });
+  test("некорректные параметры", () => {
+    expect(() => {
+      getUniqueValue({} as any[]);
+    }).toThrow();
+  });
 
   // don`t work
   // - expect(getUniqueValue([{}, {}, {}])).toStrictEqual([{}]);

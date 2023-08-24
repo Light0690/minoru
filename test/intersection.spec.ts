@@ -9,18 +9,11 @@ describe("intersection", () => {
     expect(intersection([], [1, 3])).toStrictEqual([]);
   });
 
-  //throw error - params !== array
-  // test("отсутствие параметров", () => {
-  //   expect(() => {
-  //     intersection();
-  //   }).toThrow();
-  // });
-
-  // test("некорректные параметры", () => {
-  //   expect(() => {
-  //     intersection({}, {});
-  //   }).toThrow();
-  // });
+  test("некорректные параметры", () => {
+    expect(() => {
+      intersection({} as any[], {} as any[]);
+    }).toThrow();
+  });
 
   // don`t work
   // - expect(intersection([[],1,'a'], [[]])).toStrictEqual([[]]);

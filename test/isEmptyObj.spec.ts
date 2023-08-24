@@ -6,20 +6,13 @@ describe("isEmptyObj", () => {
     expect(isEmptyObj([])).toStrictEqual(true);
     expect(isEmptyObj({ 1: "a" })).toStrictEqual(false);
   });
-
-  //throw error - param !== object
-  // test("отсутствие параметров", () => {
-  //   expect(() => {
-  //     isEmptyObj();
-  //   }).toThrow();
-  // });
   
-  // test("некорректные параметры", () => {
-  //   expect(() => {
-  //     isEmptyObj(null);
-  //   }).toThrow();
-  //   expect(() => {
-  //     isEmptyObj(undefined);
-  //   }).toThrow();
-  // });
+  test("некорректные параметры", () => {
+    expect(() => {
+      isEmptyObj(null as unknown as object);
+    }).toThrow();
+    expect(() => {
+      isEmptyObj(undefined as unknown as object);
+    }).toThrow();
+  });
 });
