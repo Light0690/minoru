@@ -13,3 +13,11 @@ npm i -D minoru
 ```
 import { fill } from 'minoru';
 ```
+
+
+### используемые технологии 
+
+- TypeScript
+- Jest
+- typedoc
+- prettier
